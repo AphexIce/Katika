@@ -1,9 +1,10 @@
-import express from 'express';
 import passport from 'passport';
 import FacebookStrategy from 'passport-facebook';
 // Import Facebook and Google OAuth apps configs
 import { facebook } from './config';
-
+var express = require('express'),
+    app     = express(),
+    morgan  = require('morgan');
 // Transform Facebook profile because Facebook and Google profile objects look different
 // and we want to transform them into user objects that have the same set of attributes
 const transformFacebookProfile = (profile) => ({
@@ -47,10 +48,6 @@ const server = app.listen(3000, () => {
   const { address, port } = server.address();
   console.log(`Listening at http://${address}:${port}`);
 });
-
-var express = require('express'),
-    app     = express(),
-    morgan  = require('morgan');
     
 Object.assign=require('object-assign')
 
