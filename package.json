@@ -7,10 +7,14 @@
     "chai": "^3.5.0",
     "chai-http": "^2.0.1",
     "ejs": "^2.4.1",
-    "express": "^4.13.4",
+    "express": "^4.15.2",
     "mocha": "^2.4.5",
     "mongodb": "^2.1.16",
     "morgan": "^1.7.0",
+    "cookie-session": "^2.0.0-beta.1",
+    "passport": "^0.3.2",
+    "passport-facebook": "^2.1.1",
+    "passport-google-oauth20": "^1.0.0",
     "object-assign":"4.1.0"
   },
   "engine": {
